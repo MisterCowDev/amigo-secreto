@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes de prueba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form>
+        <p>Estudiante: Esteban Lagos - Sección: Lunes</p>
+
+        <div>
+            <label>Rut: </label>
+            <input type="text">
+        </div>
+
+        <div>
+            <label>Nombre cliente: </label>
+            <input type="text">
+        </div>
+
+        <div>
+            <label>Dirección: </label>
+            <input type="text">
+        </div>
+
+        <div>
+            <label>Ciudad</label>
+            <select name="comboBox" id="comboBox">
+                <!--Cargar las ciudades en el script-->
+            </select>
+        </div>
+        
+        <div>
+            <label>Fecha de factura</label>
+            <input type="datetime-local">
+        </div>
+
+        <button id="addElement">Agregar línea</button>
+        <button type="reset">Limpiar campos</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Cantidad</td>
+                <td>Detalle</td>
+                <td>Valor</td>
+                <td>Acciones</td>
+            </tr>
+        </thead>
+        <tbody id="cuerpoTabla">      
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

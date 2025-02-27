@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar mensajes al usuario</title>
+    <style>
+        button {
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mostrar mensajes del Usuario</h1>
+    <button onclick="mostrarConfirmacion()">Mostrar confirmación</button>
+    <button onclick="solicitarDatos()">Solicitar datos</button>
+    <button onclick="mostrarAlerta()">Mostrar alerta</button>
+    <button onclick="mostrarMensajeHtml()">Mostrar en HTML</button>
+    <button onclick="mostrarMensajeVentana()">Mostrar en ventana emergente</button>
+    <button onclick="mostrarMensajeTooltip()">Mostrar Tooltip</button>
+    <button onclick="mostrarMensajeTemporizado()">Mostrar temporizado</button>
+    <button ondblclick="mostrarMensajeDobleCLick()">Mostrar double click</button>
+    
+    <button onmouseover="mostrarMensajeMouseOver()">Mostrar mouse over</button>
+    <button onmouseout="mostrarMensajeMouseOut()">Mostrar mouse out</button>
+
+    <div id="texto" style="display: none;">Mensaje de texto</div>
+    <div id="tooltip" style="border: 1px solid black; padding: 10px;">Mensaje Tooltip</div>
+
+    <!--Radio boton-->
+    
+    <div>
+        <input type="radio" id="opcion1" name="opcion" value="opcion1" onchange="manejarBotonRadio()">
+        <label for="opcion1">Opcion1</label>
+    </div>
+
+    <div>
+        <input type="radio" id="opcion2" name="opcion" value="opcion2" onchange="manejarBotonRadio()">
+        <label for="opcion2">Opcion2</label>
+    </div>
+
+    <!--Casillas-->
+
+    <input type="checkbox" id="casilla1" name="casilla1" value="valor1" onchange="manejarCasillaVerificacion()">
+    <label for="casilla1">casilla 1</label><br>
+    <input type="checkbox" id="casilla2" name="casilla2" value="valor2" onchange="manejarCasillaVerificacion()">
+    <label for="casilla2">casilla 2</label>
+
+    <script src="app.js"></script>
+</body>
+</html>

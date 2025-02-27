@@ -1,0 +1,13 @@
+.slider-container{
+    width: 100%;
+    overflow: hidden;
+}
+
+.sliderPrincipal{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.sliderIndividual{
+    width: 100%;
+}

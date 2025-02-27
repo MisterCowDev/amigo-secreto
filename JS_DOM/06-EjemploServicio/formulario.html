@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        #camposServicioMilitar{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form id="formRegistro">
+        <label>Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label>Sexo: </label>
+        <input type="radio" id="sexoMasculino" name="sexo" value="masculino">
+        <label>Masculino</label>
+        
+        <input type="radio" id="sexoFemenino" name="sexo" value="femenino">
+        <label>Femenino</label><br><br>
+
+        <div id="camposServicioMilitar">
+            <label>¿Servicio militar al día?</label>
+            <input type="radio" id="servicioSi" name="servicioMilitar" value="si">
+            <label>Si</label>
+            <input type="radio" id="servicioNo" name="servicioMilitar" value="no">
+            <label>No</label>
+        </div>
+
+        <input type="submit" value="Registrar">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

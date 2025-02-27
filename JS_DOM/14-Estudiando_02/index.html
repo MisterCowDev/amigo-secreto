@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Factura</title>
+    <link rel="stylesheet" href="../css/syles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Factura</h1>
+        <h3 style="display: inline;"><strong>Estudiante: </strong></h3>
+        <span style="display: inline;">Esteban Lagos &nbsp</span>
+        <h3 style="display: inline;"><strong>Sección: </strong></h3>
+        <span style="display: inline;">Lunes</span>
+        <br><br>
+        <div class="form-group">
+            <label>RUT: </label>
+            <input type="text" id="rutCliente" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Nombre Cliente: </label>
+            <input type="text" id="nombreCliente" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Direccion: </label>
+            <input type="text" id="direccion" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Ciudad: </label>
+            <select id="ciudad" class="form-control">
+                <option value="santiago">Santiago</option>
+                <option value="valparaiso">Valparaíso</option>
+                <option value="concepcion">Concepción</option>
+                <option value="antofagasta">Antofagasta</option>
+                <option value="temuco">Temuco</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Fecha Factura: </label>
+            <input type="date" id="fechaFactura" class="form-control">
+        </div>
+
+        <button id="agregarLinea" class="btn btn-primary">Agregar Línea</button>
+        <button id="limpiarCampos" class="btn btn-secondary limpiar-btn">Limpiar Campos</button>
+
+        <p></p>
+        <div class="table-container">
+            <table id="tablaFactura" class="table">
+                <thead>
+                    <tr>
+                        <th>Cantidad</th>
+                        <th>Detalle</th>
+                        <th>Valor</th>
+                        <th class="table-actions">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla">
+                    <!-- Aquí se añadirán las Líneas de la factura dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+        <div class="total-container">
+            <label>Total: </label>
+            <span id="totalFactura" class="total">0</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.container {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rut {
+    width: 100%;
+}
+
+.cliente {
+    width: 100%;
+}
+
+.direccion {
+    width: 100%;
+}
+
+.combo {
+    width: 100%;
+}
+
+.valor {
+    float: right;
+}
+
+.inputValor{
+    float: right;
+    width: 50px;
+}
+

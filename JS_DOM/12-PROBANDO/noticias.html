@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias de Cocina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77d5d8 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .news-section {
+            margin: 20px 0;
+        }
+        .news-article {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .news-article h2 {
+            margin-top: 0;
+        }
+        .news-article p {
+            margin: 0;
+        }
+        .news-article time {
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Noticias de Cocina</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Recetas</a></li>
+                    <li><a href="#">Consejos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="news-section">
+            <article class="news-article">
+                <h2>Descubre las últimas tendencias en cocina molecular</h2>
+                <time datetime="2024-06-25">25 de junio de 2024</time>
+                <p>La cocina molecular sigue evolucionando y este año trae nuevas técnicas y sabores que te sorprenderán. Descubre cómo puedes incorporar estos métodos en tu cocina diaria.</p>
+            </article>
+            <article class="news-article">
+                <h2>5 recetas rápidas para una cena deliciosa</h2>
+                <time datetime="2024-06-20">20 de junio de 2024</time>
+                <p>Si tienes poco tiempo pero quieres disfrutar de una cena casera y deliciosa, estas cinco recetas son perfectas para ti. Ingredientes simples y preparación rápida.</p>
+            </article>
+            <article class="news-article">
+                <h2>El secreto de los chefs para un pastel perfecto</h2>
+                <time datetime="2024-06-18">18 de junio de 2024</time>
+                <p>¿Quieres que tus pasteles sean tan esponjosos y deliciosos como los de los chefs profesionales? Aquí te revelamos algunos de sus secretos mejor guardados.</p>
+            </article>
+        </section>
+    </div>
+</body>
+</html>

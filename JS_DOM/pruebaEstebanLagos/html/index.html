@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <link rel="stylesheet" href="/pruebaEstebanLagos/css/style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container">
+    <form class="formulario">
+        <div>
+            <p>Estudiante: Esteban Lagos Obreque    Sección: Lunes</p>
+            
+            <label>Rut: </label><br>
+            <input type="text" class="rut"><br><br>
+            
+            <label>Nombre de cliente: </label><br>
+            <input type="text" class="cliente"><br><br>
+            
+            <label>Dirección: </label><br>
+            <input type="text" class="direccion"><br><br>
+            
+            <label>Ciudad: </label><br>
+            <select class="combo">
+                <option value="Santiago">Santiago</option>
+                <option value="Santiago">Valparaiso</option>
+                <option value="Santiago">Concepción</option>
+                <option value="Santiago">Antofagasta</option>
+                <option value="Santiago">Temuco</option>
+            </select>
+            <div>
+                <br>
+                <label>Fecha de factura: </label><br>
+                <input type="datetime-local"><br><br>
+            </div>
+            
+
+            <input type="submit" id="agregar" class="botonAgregar btn btn-primary" value="Agregar Línea">
+            <input type="reset" id="limpiar" value="Limpiar campos" class="btn btn-secondary"><br>
+        </div>
+        <br><br>
+        <table>
+            <thead>
+                <tr>
+                    <td>Cantidad</td>
+                    <td>Detalle</td>
+                    <td>Valor</td>
+                    <td>Acciones</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" id="cantidad"></td>
+                    <td><input type="text" id="detalle"></td>
+                    <td><input type="text" id="Valor" class="valor"></td>
+                    <td><button class="btn btn-danger" id="eliminar">Eliminar</button></td>
+                </tr>
+            </tbody>
+            
+            <tbody id="nuevaTabla">
+            </tbody>
+        </table>
+        <label class="valor">Valor: </label><br>
+        <span id="total" class="inputValor">0</span>
+
+    </form>
+    <script src="/pruebaEstebanLagos/js/script.js"></script>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
